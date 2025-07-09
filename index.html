@@ -7,102 +7,111 @@
 
     <title>Formulário Dev da professora Ballerini</title>
 
-    <link rel="stylesheet"  type="text/css"   href="./src/reset.css">
-    <link rel="stylesheet"  type="text/css"   href="./src/styles.css">
+    <link rel="stylesheet" type="text/css" href="./src/reset.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles.css">
 
 </head>
 
 <body>
+    <section class="card">
+        <div class="registro">
+            <h1 class="registro-titulo">Cadastro de Devs</h1>
+            <p class="registro-subtitulo">Complete as suas informações</p>
+            <br>
+        </div>
 
-    <div>
-        <h1 id="titulo">Cadastro de Devs</h1>
-        <p id="subtitulo">Complete as suas informações</p>
-        <br>
-    </div>
-
-    <form>
-        <fieldset class="grupo">
-            <div class="campo">
-                <label for="nome"><strong>Nome:</strong></label>
-                <input type="text" name="nome" id="nome" required>
-            </div>
-            <div class="campo">
-                <label for="sobrenome"><strong>Sobrenome:</strong></label>
-                <input type="text" name="sobrenome" id="sobrenome" required>
-            </div>
-        </fieldset>
-        
-            <div class="campo">
+        <form class="formulario">
+            <fieldset class="inputs">
+                <div class="inputs-campo">
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input class="inputs-campo_nome" type="text" name="nome" id="nome" required>
+                </div>
+                <div class="inputs-campo">
+                    <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                    <input class="inputs-campo_sobrenome" type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+                <div class="inputs-campo">
                 <label for="email"><strong>Email:</strong></label>
-                <input type="email" name="email" id="email" required>
+                <input class="inputs-campo_email" type="email" name="email" id="email" required>
+                </div>
+            </fieldset>
 
-                <label>De qual lado da aplicação você desenvolve?</label>
-                <label>
-                    <input type="radio" name="devweb" value="front"> Front-end
-                </label>
-                <label>
-                    <input type="radio" name="devweb" id="back"> Back-end
-                </label>
-                <label>
-                    <input type="radio" name="devweb" value="fullstack">Fullstack
-                </label>
+            <div class="radiais">
                 
-            </div>   
-                
-            <div>
-                <label for="senioridade">Senioridade</label>
-                <select id="senioridade">
-                    <option>Junior</option>
-                    <option>Pleno</option>
-                    <option>Senior</option>
-                </select>
-            </div>    
-                
-        
 
-            <fieldset class="grupo">
-                <div id="check">
-                <label>Selecione as tecnologias que utiliza:</label> 
-                <input type="checkbox" name="tecnologia1" id="HTML">
-                <label for="tecnologia1">HTML</label>
-                <input type="checkbox" name="tecnologia2" id="CSS">
-                <label for="tecnologia2">CSS</label>
-                <input type="checkbox" name="tecnologia3" id="JavaScript">
-                <label for="tecnologia3">JavaScript</label>
-                <input type="checkbox" name="tecnologia4" id="PHP">
-                <label for="tecnologia4">PHP</label>
-                <input type="checkbox" name="tecnologia5" id="C#">
-                <label for="tecnologia5">C#</label>
-                <input type="checkbox" name="tecnologia6" id="Python">
-                <label for="tecnologia6">Python</label>
-                <input type="checkbox" name="tecnologia7" id="Java">
-                <label for="tecnologia7">Java</label>
+                <p class="radiais-pergunta">De qual lado da aplicação você desenvolve?</label>
+                <p>
+                
+                <div class="radiais-opcoes" >
+                    <input class="radiais-opcoes-item-item" type="radio" name="devweb" value="front"> Front-end
+                </label>
+                <label>
+                    <input class="radiais-opcoes-item" type="radio" name="devweb" id="back"> Back-end
+                </label>
+                <label>
+                    <input class="radiais-opcoes-item" type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+                </div>
             </div>
 
-        </fieldset>
+            <div class="seletora">
+                <label class="seletora-senioridade" for="senioridade">Senioridade</label>
+                <select class="seletora-senioridade-opcoes" id="senioridade">
+                    <option class="seletora-senioridade_opcao_item_item" >Junior</option>
+                    <option class="seletora-senioridade_opcao_item" >Pleno</option>
+                    <option class="seletora-senioridade_opcao_item">Senior</option>
+                </select>
+            </div>
 
-        
-            
-        <div class="campo">
 
-            <label >Conte um pouco da sua experiência:</label>
-            <textarea rows="6" style="width: 20em"name="experiencia" id="experiencia"></textarea>
+            <fieldset class="caixinhas">
+            <div id="check">
+                    <label class="caixinhas-tecnologia_titulo">Selecione as tecnologias que utiliza:</label>
+                    <div class="container-caixinhas-tecnologia_opcoes">
+                    <div class="container-caixinhas-tecnologia_opcoes_item">
+                        <input type="checkbox" name="tecnologia1" id="HTML">
+                        <label class="caixinhas-tecnologia_titulo" for="tecnologia1">HTML</label>
+                    </div>
+                    <div class="container-caixinhas-tecnologia_opcoes_item">
+                        <input type="checkbox" name="tecnologia2" id="CSS">
+                        <label class="caixinhas-tecnologia_titulo" for="tecnologia2">CSS</label>
+                    </div>
+                    <div class="container-caixinhas-tecnologia_opcoes_item">
+                        <input type="checkbox" name="tecnologia3" id="JavaScript">
+                        <label class="caixinhas-tecnologia_titulo" for="tecnologia3">JavaScript</label>
+                    </div>
+                    <div class="container-caixinhas-tecnologia_opcoes_item">
+                        <input type="checkbox" name="tecnologia4" id="PHP">
+                        <label class="caixinhas-tecnologia_titulo" for="tecnologia4">PHP</label>
+                    </div> 
+                    <div class="container-caixinhas-tecnologia_opcoes_item">   
+                        <input type="checkbox" name="tecnologia5" id="C#">
+                        <label class="caixinhas-tecnologia_titulo" for="tecnologia5">C#</label>
+                    </div>
+                    <div class="container-caixinhas-tecnologia_opcoes_item">
+                    <input type="checkbox" name="tecnologia6" id="Python">
+                    <label class="caixinhas-tecnologia_titulo" for="tecnologia6">Python</label>
+                    </div>
+                    <div class="container-caixinhas-tecnologia_opcoes_item">
+                    <input type="checkbox" name="tecnologia7" id="Java">
+                    <label class="caixinhas-tecnologia_titulo" for="tecnologia7">Java</label>
+                    </div>
+                </div>
+            </div>
+
+            </fieldset>
 
 
-        </div>
+            <div class="texto">
 
-        <div class="botao">
+                <label class="texto-titulo">Conte um pouco da sua experiência:</label>
+                <textarea rows="8"  name="experiencia" id="experiencia" class="texto-caixa"></textarea>
 
-            <button type="submit">Concluir</button>
 
-        </div>
-            
-        
-            
+            </div>
 
-            
-        </form>
+            <div class="botao">
 
-    
-</body>
-</html>
+                <button type="submit">Concluir</button>
+
+            </div>

@@ -1,0 +1,36 @@
+:root{
+    --cor-um:#380b61;
+    --cor-dois:#f0f8ff;
+    --cor-tres:#59429d;
+    --cor-quatro:#E0E0F8;
+    --cor-cinco:#ffffff;
+    --cor-seis:#ccbbff;
+}
+
+body{
+    background-color: var(--cor-dois);
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: var(--cor-tres);
+    te
+    /* margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center; */
+}
+
+button{
+    border: none;
+    background-color: var(--cor-tres);
+    width:8rem;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    color: var(--cor-cinco);
+    padding: 1em 0.6em;
+    border-radius: 10rem;
+    
+}
+
+button:hover{
+    background: #ccbbff;
+    
+}
